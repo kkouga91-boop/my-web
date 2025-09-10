@@ -1,1 +1,188 @@
-高校生がAIで作った曲
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Memories</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
+		body {
+			margin: 0;
+			font-family: 'Roboto', 'Segoe UI', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+			background: linear-gradient(120deg, #232526 0%, #414345 100%);
+			color: #f3f3f3;
+			min-height: 100vh;
+		}
+		header {
+			background: rgba(20,20,20,0.95);
+			color: #fff;
+			padding: 1.5rem 0 1rem 0;
+			text-align: center;
+			letter-spacing: 0.1em;
+			box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+		}
+		header h1 {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 2.5rem;
+			margin: 0;
+			letter-spacing: 0.12em;
+			background: linear-gradient(90deg, #ffd700 30%, #ff6a00 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		nav {
+			margin-top: 0.5rem;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 1.2rem;
+			font-size: 1.1rem;
+			font-weight: 500;
+			letter-spacing: 0.05em;
+			transition: color 0.2s;
+		}
+		nav a:hover {
+			color: #ffd700;
+		}
+		.hero {
+			width: 100%;
+			min-height: 320px;
+			background: linear-gradient(120deg, #ff6a00 0%, #ffd700 100%);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			color: #232526;
+			box-shadow: 0 6px 32px rgba(0,0,0,0.13);
+			animation: fadeIn 1.2s;
+		}
+		.hero-title {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 2.2rem;
+			font-weight: 700;
+			margin-bottom: 0.7rem;
+			letter-spacing: 0.08em;
+		}
+		.hero-desc {
+			font-size: 1.2rem;
+			margin-bottom: 1.2rem;
+		}
+		.container {
+			max-width: 1100px;
+			margin: 2.5rem auto;
+			padding: 0 1rem;
+		}
+		.cards {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2.2rem;
+			justify-content: center;
+		}
+		.card {
+			background: rgba(30,30,30,0.98);
+			border-radius: 1.2rem;
+			box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+			padding: 0;
+			width: 300px;
+			overflow: hidden;
+			transition: transform 0.22s, box-shadow 0.22s;
+			position: relative;
+			animation: fadeInUp 1s;
+		}
+		.card:hover {
+			transform: translateY(-10px) scale(1.04);
+			box-shadow: 0 10px 36px rgba(255, 215, 0, 0.18);
+		}
+		.card-img {
+			width: 100%;
+			height: 160px;
+			object-fit: cover;
+			background: #444;
+			display: block;
+		}
+		.card-body {
+			padding: 1.3rem 1.2rem 1.2rem 1.2rem;
+		}
+		.card-title {
+			font-size: 1.25rem;
+			font-weight: bold;
+			margin-bottom: 0.6rem;
+			color: #ffd700;
+			font-family: 'Montserrat', sans-serif;
+		}
+		.card-date {
+			font-size: 0.92rem;
+			color: #aaa;
+			margin-bottom: 0.5rem;
+		}
+		.card-content {
+			font-size: 1.05rem;
+			color: #f3f3f3;
+		}
+		footer {
+			text-align: center;
+			color: #aaa;
+			font-size: 1rem;
+			padding: 2.5rem 0 1.2rem 0;
+			letter-spacing: 0.05em;
+		}
+		@keyframes fadeIn {
+			from { opacity: 0; transform: translateY(-30px); }
+			to { opacity: 1; transform: none; }
+		}
+		@keyframes fadeInUp {
+			from { opacity: 0; transform: translateY(40px); }
+			to { opacity: 1; transform: none; }
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>My Memories</h1>
+		<nav>
+			<a href="#">ホーム</a>
+			<a href="#">思い出</a>
+			<a href="#">プロフィール</a>
+		</nav>
+	</header>
+	<section class="hero">
+		<div class="hero-title">思い出を、もっとカッコよく。</div>
+		<div class="hero-desc">音楽・AI・青春の記録を、スタイリッシュに残そう。</div>
+	</section>
+	<div class="container">
+		<h2 style="text-align:center; margin-bottom:2.2rem; font-family:'Montserrat',sans-serif; color:#ffd700; letter-spacing:0.08em;">過去の思い出</h2>
+		<div class="cards">
+			<div class="card">
+				<img class="card-img" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80" alt="ライブの写真">
+				<div class="card-body">
+					<div class="card-title">初めてのライブ</div>
+					<div class="card-date">2023年5月</div>
+					<div class="card-content">友達と一緒にバンドを組んで、文化祭で初めてライブをしました。緊張したけど最高の思い出！</div>
+				</div>
+			</div>
+			<div class="card">
+				<img class="card-img" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="AI作曲イメージ">
+				<div class="card-body">
+					<div class="card-title">AIで作曲</div>
+					<div class="card-date">2024年2月</div>
+					<div class="card-content">AIを使ってオリジナル曲を制作。新しい技術に挑戦して、たくさん学びました。</div>
+				</div>
+			</div>
+			<div class="card">
+				<img class="card-img" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="卒業式イメージ">
+				<div class="card-body">
+					<div class="card-title">卒業式</div>
+					<div class="card-date">2025年3月</div>
+					<div class="card-content">仲間と過ごした日々に感謝。みんなで泣いて笑った卒業式は一生の宝物です。</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		&copy; 2025 My Memories. All rights reserved.
+	</footer>
+</body>
+</html>
